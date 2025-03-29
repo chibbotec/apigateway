@@ -11,6 +11,6 @@ services:
   space:
     url: http://localhost:9030 # 스페이스 서비스 URL
   tech-interview:
-    url: http://localhost:9040 # 스페이스 서비스 URL
+    url: http://localhost:9040 # 기술면접 서비스 URL
   ai:
-    url: http://localhost:9090 # 스페이스 서비스 URL
+    url: http://localhost:9090 # AI 서비스 URL

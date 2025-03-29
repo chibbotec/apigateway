@@ -13,8 +13,8 @@ class ServiceManager:
         self.socat_port: int = socat_port
         self.sleep_duration: int = sleep_duration
         self.services: Dict[str, int] = {
-            'here_is_paw_member_1': 9001,
-            'here_is_paw_member_2': 9002
+            'apigateway_1': 9001,
+            'apigateway_2': 9002
         }
         self.current_name: Optional[str] = None
         self.current_port: Optional[int] = None
@@ -26,7 +26,7 @@ class ServiceManager:
         cmd: str = f"ps aux | grep 'socat -t0 TCP-LISTEN:{self.socat_port}' | grep -v grep | awk '{{print $NF}}'"
         current_service: str = subprocess.getoutput(cmd)
         if not current_service:
-            self.current_name, self.current_port = 'here_is_paw_member_2', self.services['here_is_paw_member_2']
+            self.current_name, self.current_port = 'apigateway_2', self.services['apigateway_2']
         else:
             self.current_port = int(current_service.split(':')[-1])
             self.current_name = next((name for name, port in self.services.items() if port == self.current_port), None)
