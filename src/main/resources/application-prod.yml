@@ -5,12 +5,12 @@ spring:
     name: gateway-service
 services:
   auth:
-    url: http://210.113.34.187:9010 # 인증 서비스 URL
+    url: http://172.30.1.23:9010 # 인증 서비스 URL
   member:
-    url: http://210.113.34.187:9020 # 회원 서비스 URL
+    url: http://172.30.1.23:9020 # 회원 서비스 URL
   space:
-    url: http://210.113.34.187:9030 # 스페이스 서비스 URL
+    url: http://172.30.1.23:9030 # 스페이스 서비스 URL
   tech-interview:
-    url: http://210.113.34.187:9040 # 기술면접 서비스 URL
+    url: http://172.30.1.23:9040 # 기술면접 서비스 URL
   ai:
-    url: http://210.113.34.187:9090 # AI 서비스 URL
+    url: http://172.30.1.23:9090 # AI 서비스 URL
