@@ -47,8 +47,8 @@ public class SecurityConfig {
     CorsConfiguration configuration = new CorsConfiguration();
     configuration.setAllowedOrigins(Arrays.asList(
         "http://localhost:5173",
-        "https://www.pawpaw.kknaks.site",
-        "https://pawpaw.kknaks.site"));
+        "https://www.chibbotec.kknaks.site",
+        "https://chibbotec.kknaks.site"));
     configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
     configuration.setAllowedHeaders(Arrays.asList("Authorization", "Content-Type", "Accept"));
     configuration.setExposedHeaders(Arrays.asList("X-Connection-ID"));
