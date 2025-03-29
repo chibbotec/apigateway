@@ -42,6 +42,9 @@ dependencies {
     // webClient
     implementation ("org.springframework.boot:spring-boot-starter-webflux")
 
+    //actuator 설정
+    implementation ("org.springframework.boot:spring-boot-starter-actuator")
+
     //docker-compose
 //    developmentOnly("org.springframework.boot:spring-boot-docker-compose")
 }

@@ -12,3 +12,11 @@ logging:
     com.ll.apigateway: DEBUG  # 패키지명 맞게 수정
     com.ll.apigateway.filter: DEBUG
     org.springframework.web.reactive.function.client.ExchangeFunctions: DEBUG
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
