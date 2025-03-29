@@ -1,0 +1,16 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: gateway-service
+services:
+  auth:
+    url: http://localhost:9010 # 인증 서비스 URL
+  member:
+    url: http://localhost:9020 # 회원 서비스 URL
+  space:
+    url: http://localhost:9030 # 스페이스 서비스 URL
+  tech-interview:
+    url: http://localhost:9040 # 스페이스 서비스 URL
+  ai:
+    url: http://localhost:9090 # 스페이스 서비스 URL
