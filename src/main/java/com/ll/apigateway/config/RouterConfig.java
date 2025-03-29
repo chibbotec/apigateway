@@ -44,6 +44,10 @@ public class RouterConfig {
             .filters(f -> f.rewritePath("/api/v1/auth/(?<segment>.*)", "/api/v1/auth/${segment}"))
             .uri(authServiceUrl))
 
+        //social 로그인 라우팅
+        .route("oauth-routes", r -> r.path("/oauth2/**", "/login/oauth2/**")
+            .uri(authServiceUrl))
+
         // 회원 서비스 라우팅 (보호된 엔드포인트)
         .route("member-service", r -> r.path("/api/v1/members/**")
             .filters(f -> f.filter(authFilter.apply(new AuthenticationFilter.Config())))
