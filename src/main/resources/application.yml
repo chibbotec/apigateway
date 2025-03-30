@@ -8,10 +8,10 @@ spring:
 # 로깅 설정 추가
 logging:
   level:
-    root: INFO
-    com.ll.apigateway: DEBUG  # 패키지명 맞게 수정
-    com.ll.apigateway.filter: DEBUG
-    org.springframework.web.reactive.function.client.ExchangeFunctions: DEBUG
+    com.ll.apigateway: DEBUG
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.http.server.reactive: DEBUG
+    reactor.netty: DEBUG
 management:
   endpoints:
     web:
