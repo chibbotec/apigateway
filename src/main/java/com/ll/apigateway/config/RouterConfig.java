@@ -60,8 +60,8 @@ public class RouterConfig {
 
         // 기술면접 서비스 라우팅 (보호된 엔드포인트)
         .route("techInterview-service", r -> r.path("/api/v1/tech-interview/**")
-            .filters(f -> f.rewritePath("/api/v1/tech-interview/(?<segment>.*)", "/api/v1/tech-interview/${segment}"))
-//            .filters(f -> f.filter(authFilter.apply(new AuthenticationFilter.Config())))
+//            .filters(f -> f.rewritePath("/api/v1/tech-interview/(?<segment>.*)", "/api/v1/tech-interview/${segment}"))
+            .filters(f -> f.filter(authFilter.apply(new AuthenticationFilter.Config())))
             .uri(techInterviewServiceUrl))
 
         // ai 서비스 라우팅 (보호된 엔드포인트)

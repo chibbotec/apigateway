@@ -65,41 +65,87 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Config> {
 
       // 쿠키에서 토큰 추출
       String accessToken = extractAccessToken(exchange);
-      if (accessToken == null || accessToken.isBlank()) {
-        return onError(exchange, "토큰이 없습니다.", HttpStatus.UNAUTHORIZED);
-      }
 
-      // 토큰 검증
-      if (!jwtUtil.isValid(accessToken)) {
-        return onError(exchange, "유효하지 않은 토큰입니다.", HttpStatus.UNAUTHORIZED);
-      }
+// 액세스 토큰이 있는 경우 검증
+      if (accessToken != null && !accessToken.isBlank()) {
+        // 토큰 검증
+        if (!jwtUtil.isValid(accessToken)) {
+          return onError(exchange, "유효하지 않은 토큰입니다.", HttpStatus.UNAUTHORIZED);
+        }
 
-      // 토큰 만료 확인
-      if (jwtUtil.isExpired(accessToken)) {
-        // 리프레시 토큰 추출
+        // 토큰 만료 확인
+        if (jwtUtil.isExpired(accessToken)) {
+          // 리프레시 토큰으로 처리 로직
+          HttpCookie refreshCookie = exchange.getRequest().getCookies().getFirst("refreshToken");
+          if (refreshCookie == null) {
+            return onError(exchange, "액세스 토큰이 만료되고 리프레시 토큰이 없습니다.", HttpStatus.UNAUTHORIZED);
+          }
+
+          String refreshToken = refreshCookie.getValue();
+          return refreshTokenAndContinue(exchange, chain, refreshToken);
+        }
+
+        // 인증된 사용자 정보를 헤더에 추가
+        String username = jwtUtil.getUsernameFromToken(accessToken);
+        Long userId = jwtUtil.getUserIdFromToken(accessToken);
+
+        // 헤더에 사용자 정보 추가 (백엔드 서비스에서 사용할 수 있도록)
+        ServerHttpRequest modifiedRequest = request.mutate()
+            .header("X-User-ID", String.valueOf(userId))
+            .header("X-Username", username)
+            .build();
+
+        // 수정된 요청으로 체인 계속 진행
+        return chain.filter(exchange.mutate().request(modifiedRequest).build());
+      }
+// 액세스 토큰이 없는 경우 리프레시 토큰 확인
+      else {
         HttpCookie refreshCookie = exchange.getRequest().getCookies().getFirst("refreshToken");
         if (refreshCookie == null) {
-          return onError(exchange, "액세스 토큰이 만료되고 리프레시 토큰이 없습니다.", HttpStatus.UNAUTHORIZED);
+          return onError(exchange, "액세스 토큰과 리프레시 토큰이 모두 없습니다.", HttpStatus.UNAUTHORIZED);
         }
 
         String refreshToken = refreshCookie.getValue();
-
-        // 리프레시 토큰으로 새 토큰 발급 요청 (WebClient 사용)
         return refreshTokenAndContinue(exchange, chain, refreshToken);
       }
 
+//      // 쿠키에서 토큰 추출
+//      String accessToken = extractAccessToken(exchange);
+//      if (accessToken == null || accessToken.isBlank()) {
+//        return onError(exchange, "토큰이 없습니다.", HttpStatus.UNAUTHORIZED);
+//      }
+
+//      // 토큰 검증
+//      if (!jwtUtil.isValid(accessToken)) {
+//        return onError(exchange, "유효하지 않은 토큰입니다.", HttpStatus.UNAUTHORIZED);
+//      }
+
+//      // 토큰 만료 확인
+//      if (jwtUtil.isExpired(accessToken)) {
+//        // 리프레시 토큰 추출
+//        HttpCookie refreshCookie = exchange.getRequest().getCookies().getFirst("refreshToken");
+//        if (refreshCookie == null) {
+//          return onError(exchange, "액세스 토큰이 만료되고 리프레시 토큰이 없습니다.", HttpStatus.UNAUTHORIZED);
+//        }
+//
+//        String refreshToken = refreshCookie.getValue();
+//
+//        // 리프레시 토큰으로 새 토큰 발급 요청 (WebClient 사용)
+//        return refreshTokenAndContinue(exchange, chain, refreshToken);
+//      }
+
       // 인증된 사용자 정보를 헤더에 추가
-      String username = jwtUtil.getUsernameFromToken(accessToken);
-      Long userId = jwtUtil.getUserIdFromToken(accessToken);
-
-      // 헤더에 사용자 정보 추가 (백엔드 서비스에서 사용할 수 있도록)
-      ServerHttpRequest modifiedRequest = request.mutate()
-          .header("X-User-ID", String.valueOf(userId))
-          .header("X-Username", username)
-          .build();
-
-      // 수정된 요청으로 체인 계속 진행
-      return chain.filter(exchange.mutate().request(modifiedRequest).build());
+//      String username = jwtUtil.getUsernameFromToken(accessToken);
+//      Long userId = jwtUtil.getUserIdFromToken(accessToken);
+//
+//      // 헤더에 사용자 정보 추가 (백엔드 서비스에서 사용할 수 있도록)
+//      ServerHttpRequest modifiedRequest = request.mutate()
+//          .header("X-User-ID", String.valueOf(userId))
+//          .header("X-Username", username)
+//          .build();
+//
+//      // 수정된 요청으로 체인 계속 진행
+//      return chain.filter(exchange.mutate().request(modifiedRequest).build());
     };
   }
 

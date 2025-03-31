@@ -4,7 +4,6 @@ spring:
   profiles:
     active: dev
     include: secret
-
 # 로깅 설정 추가
 logging:
   level:
