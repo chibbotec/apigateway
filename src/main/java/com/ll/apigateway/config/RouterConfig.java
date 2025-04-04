@@ -26,6 +26,10 @@ public class RouterConfig {
   @Value("${services.tech-interview.url}")
   private String techInterviewServiceUrl;
 
+  @Value("${services.onlinejudge.url}")
+  private String onlineJudgeServiceUrl;  // application.yml에 추가 필요
+
+
   @Value("${services.ai.url}")
   private String aiServiceUrl;
 
@@ -63,6 +67,13 @@ public class RouterConfig {
 //            .filters(f -> f.rewritePath("/api/v1/tech-interview/(?<segment>.*)", "/api/v1/tech-interview/${segment}"))
             .filters(f -> f.filter(authFilter.apply(new AuthenticationFilter.Config())))
             .uri(techInterviewServiceUrl))
+
+        // OnlineJudge 서비스 라우팅 (보호된 엔드포인트)
+        .route("onlinejudge-service", r -> r.path("/api/v1/coding-test/**")
+            .filters(f -> f.filter(authFilter.apply(new AuthenticationFilter.Config()))
+            .rewritePath("/api/v1/coding-test/(?<segment>.*)", "/api/v1/coding-test/${segment}"))
+//            .filters(f -> f.rewritePath("/api/v1/coding-test/(?<segment>.*)", "/api/v1/coding-test/${segment}"))
+            .uri(onlineJudgeServiceUrl))
 
         // ai 서비스 라우팅 (보호된 엔드포인트)
         .route("techInterview-service", r -> r.path("/api/v1/ai/**")
