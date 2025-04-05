@@ -11,6 +11,7 @@ import java.security.Key;
 import java.util.Base64;
 import java.util.Date;
 import java.util.Map;
+import java.util.UUID;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -74,16 +75,31 @@ public class JwtUtil {
         .getBody();
   }
 
+  public String getSessionIdFromToken(String token) {
+    Map<String, Object> payloadBody = getPayloadBody(token);
+    // 세션 ID가 없는 기존 토큰을 위한 예외 처리
+    return payloadBody.containsKey("sessionId") ?
+        (String) payloadBody.get("sessionId") :
+        UUID.randomUUID().toString(); // 없으면 새로 생성
+  }
+
+
   @SuppressWarnings("unchecked")
   public Map<String, Object> getPayloadBody(String token) {
-    Claims claims = getClaims(token);
-    String bodyJson = claims.get("body", String.class);
-
     try {
-      return objectMapper.readValue(bodyJson, Map.class);
-    } catch (JsonProcessingException e) {
-      log.error("JSON 파싱 오류: ", e);
-      throw new RuntimeException("토큰 페이로드 처리 오류", e);
+      Claims claims = getClaims(token);
+      String bodyJson = claims.get("body", String.class);
+
+      try {
+        return objectMapper.readValue(bodyJson, Map.class);
+      } catch (JsonProcessingException e) {
+        log.error("JSON 파싱 오류: ", e);
+        throw new RuntimeException("토큰 페이로드 처리 오류", e);
+      }
+    } catch (Exception e) {
+      log.error("토큰 페이로드 추출 오류: ", e);
+      // 빈 맵을 반환하여 NPE 방지
+      return Map.of();
     }
   }
 

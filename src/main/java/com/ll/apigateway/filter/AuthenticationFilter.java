@@ -360,7 +360,7 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Config> {
     // 요청별 고유 ID 생성
     String requestId = UUID.randomUUID().toString();
 
-    // 새 토큰으로 헤더 설정 (고유 요청 ID 추가)
+    // 헤더에 요청 ID 추가
     ServerHttpRequest modifiedRequest = exchange.getRequest().mutate()
         .header("X-Request-ID", requestId)
         .header("X-User-ID", String.valueOf(jwtUtil.getUserIdFromToken(tokenResponse.getAccessToken())))
@@ -376,8 +376,7 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Config> {
   // 토큰 키 생성 (보안을 위해 전체 토큰 대신 해시 사용)
   private String generateTokenKey(String token) {
     // 현재 IP 주소 또는 요청별 고유 ID를 포함시켜 더 고유한 키 생성
-    String uniqueIdentifier =
-        token.substring(0, Math.min(20, token.length())) + "-" + System.nanoTime();
+    String uniqueIdentifier = token.substring(0, Math.min(20, token.length())) + "-" + System.nanoTime();
     return Integer.toHexString(uniqueIdentifier.hashCode());
   }
 
