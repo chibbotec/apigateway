@@ -6,6 +6,7 @@ import com.ll.apigateway.filter.AuthenticationFilter.Config;
 import com.ll.apigateway.jwt.JwtUtil;
 import java.time.Duration;
 import java.util.List;
+import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.locks.ReentrantLock;
 import lombok.extern.slf4j.Slf4j;
@@ -154,7 +155,7 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Config> {
     return cookie != null ? cookie.getValue() : null;
   }
 
-   // 리프레시 토큰 처리 메소드
+  // 리프레시 토큰 처리 메소드
 //  private Mono<Void> refreshTokenAndContinue(ServerWebExchange exchange, GatewayFilterChain chain, String refreshToken) {
 //    return webClient.post()
 //        .uri(authServiceUrl+"/api/v1/auth/refresh")
@@ -203,7 +204,7 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Config> {
 //  }
 
 
-//  private Mono<Void> refreshTokenAndContinue(ServerWebExchange exchange, GatewayFilterChain chain, String refreshToken) {
+  //  private Mono<Void> refreshTokenAndContinue(ServerWebExchange exchange, GatewayFilterChain chain, String refreshToken) {
 //    log.debug("Attempting to refresh token: {}", refreshToken.substring(0, 10) + "...");
 //    log.debug("Target URL: {}", authServiceUrl+"/api/v1/auth/refresh");
 //
@@ -268,7 +269,8 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Config> {
     return response.setComplete();
   }
 
-  private Mono<Void> refreshTokenAndContinue(ServerWebExchange exchange, GatewayFilterChain chain, String refreshToken) {
+  private Mono<Void> refreshTokenAndContinue(ServerWebExchange exchange, GatewayFilterChain chain,
+      String refreshToken) {
     log.debug("Attempting to refresh token: {}", refreshToken.substring(0, 10) + "...");
 
     // 토큰의 간단한 해시 생성 (전체 토큰을 키로 사용하지 않기 위해)
@@ -294,7 +296,8 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Config> {
       // 다시 확인 (락 획득 후 다른 스레드가 이미 처리했을 수 있음)
       cachedRefresh = refreshingTokens.get(tokenKey);
       if (cachedRefresh != null) {
-        return cachedRefresh.flatMap(tokenResponse -> applyNewTokens(exchange, chain, tokenResponse));
+        return cachedRefresh.flatMap(
+            tokenResponse -> applyNewTokens(exchange, chain, tokenResponse));
       }
 
       // 실제 리프레시 토큰 요청 생성
@@ -333,7 +336,8 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Config> {
   }
 
   // 새 토큰 적용 메서드 (코드 분리)
-  private Mono<Void> applyNewTokens(ServerWebExchange exchange, GatewayFilterChain chain, TokenResponse tokenResponse) {
+  private Mono<Void> applyNewTokens(ServerWebExchange exchange, GatewayFilterChain chain,
+      TokenResponse tokenResponse) {
     ServerHttpResponse mutatedResponse = exchange.getResponse();
     mutatedResponse.addCookie(
         ResponseCookie.from("accessToken", tokenResponse.getAccessToken())
@@ -350,10 +354,15 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Config> {
             .path("/")
             .maxAge(60 * 60 * 24 * 7) // 7일
             .build()
+
     );
 
-    // 새 토큰으로 헤더 설정
+    // 요청별 고유 ID 생성
+    String requestId = UUID.randomUUID().toString();
+
+    // 새 토큰으로 헤더 설정 (고유 요청 ID 추가)
     ServerHttpRequest modifiedRequest = exchange.getRequest().mutate()
+        .header("X-Request-ID", requestId)
         .header("X-User-ID", String.valueOf(jwtUtil.getUserIdFromToken(tokenResponse.getAccessToken())))
         .header("X-Username", jwtUtil.getUsernameFromToken(tokenResponse.getAccessToken()))
         .build();
@@ -366,10 +375,11 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Config> {
 
   // 토큰 키 생성 (보안을 위해 전체 토큰 대신 해시 사용)
   private String generateTokenKey(String token) {
-    // 간단한 해시 계산 (또는 토큰의 일부만 사용)
-    return Integer.toHexString(token.substring(0, Math.min(20, token.length())).hashCode());
+    // 현재 IP 주소 또는 요청별 고유 ID를 포함시켜 더 고유한 키 생성
+    String uniqueIdentifier =
+        token.substring(0, Math.min(20, token.length())) + "-" + System.nanoTime();
+    return Integer.toHexString(uniqueIdentifier.hashCode());
   }
-
 
 
   public static class Config {
