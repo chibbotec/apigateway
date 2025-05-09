@@ -23,12 +23,14 @@ public class RouterConfig {
   @Value("${services.space.url}")
   private String spaceServiceUrl;
 
+  @Value("${services.resume.url}")
+  private String resumeServiceUrl;
+
   @Value("${services.tech-interview.url}")
   private String techInterviewServiceUrl;
 
   @Value("${services.onlinejudge.url}")
-  private String onlineJudgeServiceUrl;  // application.yml에 추가 필요
-
+  private String onlineJudgeServiceUrl;
 
   @Value("${services.ai.url}")
   private String aiServiceUrl;
@@ -56,6 +58,13 @@ public class RouterConfig {
         .route("member-service", r -> r.path("/api/v1/members/**")
             .filters(f -> f.filter(authFilter.apply(new AuthenticationFilter.Config())))
             .uri(memberServiceUrl))
+
+        // 이력서 서비스 라우팅 (보호된 엔드포인트)
+        .route("resume-service", r -> r.path("/api/v1/resume/**")
+//            .filters(f -> f.filter(authFilter.apply(new AuthenticationFilter.Config()))
+//                .rewritePath("/api/v1/resume/(?<segment>.*)", "/api/v1/resume/${segment}"))
+            .filters(f -> f.rewritePath("/api/v1/resume/(?<segment>.*)", "/api/v1/resume/${segment}"))
+            .uri(resumeServiceUrl))
 
         // 스페이스 서비스 라우팅 (보호된 엔드포인트)
         .route("space-service", r -> r.path("/api/v1/space/**")
