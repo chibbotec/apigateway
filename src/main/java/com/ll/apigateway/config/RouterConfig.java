@@ -61,9 +61,9 @@ public class RouterConfig {
 
         // 이력서 서비스 라우팅 (보호된 엔드포인트)
         .route("resume-service", r -> r.path("/api/v1/resume/**")
-//            .filters(f -> f.filter(authFilter.apply(new AuthenticationFilter.Config()))
-//                .rewritePath("/api/v1/resume/(?<segment>.*)", "/api/v1/resume/${segment}"))
-            .filters(f -> f.rewritePath("/api/v1/resume/(?<segment>.*)", "/api/v1/resume/${segment}"))
+            .filters(f -> f.filter(authFilter.apply(new AuthenticationFilter.Config()))
+                .rewritePath("/api/v1/resume/(?<segment>.*)", "/api/v1/resume/${segment}"))
+//            .filters(f -> f.rewritePath("/api/v1/resume/(?<segment>.*)", "/api/v1/resume/${segment}"))
             .uri(resumeServiceUrl))
 
         // 스페이스 서비스 라우팅 (보호된 엔드포인트)

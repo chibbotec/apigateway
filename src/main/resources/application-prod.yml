@@ -15,6 +15,6 @@ services:
   onlinejudge:
     url: http://172.30.1.23:9050 # 코딩테스트 서비스 URL
   resume:
-    url: http://172.30.1.23:9060 # 코딩테스트 서비스 URL
+    url: http://172.30.1.23:9060 # 자소서
   ai:
     url: http://172.30.1.23:9090 # AI 서비스 URL

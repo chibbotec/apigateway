@@ -11,6 +11,10 @@ logging:
     org.springframework.cloud.gateway: DEBUG
     org.springframework.http.server.reactive: DEBUG
     reactor.netty: DEBUG
+  file:
+    name: ./logs/apigateway.log  # 로그 파일 위치
+  pattern:
+      file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
 management:
   endpoints:
     web:
@@ -19,3 +23,12 @@ management:
   endpoint:
     health:
       show-details: always
+  info:
+    env:
+      enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
+    export:
+      prometheus:
+        enabled: true

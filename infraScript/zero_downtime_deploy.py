@@ -72,7 +72,11 @@ class ServiceManager:
     # Docker 컨테이너를 실행하는 함수
     def _run_container(self, name: str, port: int) -> None:
         os.system(
-            f"docker run -d --name={name} --restart unless-stopped -p {port}:9000 -e TZ=Asia/Seoul -v /dockerProjects/chibbotec/apigateway/volumes/gen:/gen --pull always ghcr.io/chibbotec/apigateway")
+            f"docker run -d --name={name} --restart unless-stopped -p {port}:9000 "
+            f"-e TZ=Asia/Seoul "
+            f"-v /dockerProjects/chibbotec/apigateway/volumes/gen:/gen "
+            f"-v /dockerProjects/chibbotec/apigateway/volumes/logs:/app/logs "
+            f"--pull always ghcr.io/chibbotec/apigateway")
     ##
     def _switch_port(self) -> None:
         # Socat 포트를 전환하는 함수

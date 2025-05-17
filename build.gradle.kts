@@ -47,6 +47,16 @@ dependencies {
 
     //docker-compose
 //    developmentOnly("org.springframework.boot:spring-boot-docker-compose")
+
+    // Spring Boot Admin 클라이언트 의존성
+    implementation ("de.codecentric:spring-boot-admin-starter-client:3.1.7")
+
+    // 모니터링 도구들
+    implementation ("io.micrometer:micrometer-registry-prometheus")
+
+    // JPA 쿼리 모니터링을 위한 도구들
+//    implementation ("com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.0")
+//    implementation ("com.github.gavlyukovskiy:datasource-proxy-spring-boot-starter:1.9.0")
 }
 
 dependencyManagement {
