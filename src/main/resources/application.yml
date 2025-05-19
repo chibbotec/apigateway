@@ -26,9 +26,12 @@ management:
   info:
     env:
       enabled: true
-  metrics:
+  # 새로운 Prometheus 설정
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+  # 새로운 태그 설정
+  observations:
     tags:
       application: ${spring.application.name}
-    export:
-      prometheus:
-        enabled: true
