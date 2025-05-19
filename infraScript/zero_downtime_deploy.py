@@ -73,6 +73,7 @@ class ServiceManager:
     def _run_container(self, name: str, port: int) -> None:
         os.system(
             f"docker run -d --name={name} --network=chibbotec-network "
+            f"--network-alias=apigateway "
             f"--restart unless-stopped -p {port}:9000 -e TZ=Asia/Seoul "
             f"-v /dockerProjects/chibbotec/apigateway/volumes/gen:/gen "
             f"-v /dockerProjects/chibbotec/apigateway/volumes/logs:/app/logs "
