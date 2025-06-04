@@ -1,7 +1,7 @@
-2025-05-22 15:52:19 [reactor-http-nio-8] DEBUG r.n.r.PooledConnectionProvider - [61867649] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
-2025-05-22 15:52:19 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConfig - [61867649] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
-2025-05-22 15:52:19 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConnector - [61867649] Connecting to [localhost/127.0.0.1:8085].
-2025-05-22 15:52:19 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConnector - [61867649] Connect attempt to [localhost/127.0.0.1:8085] failed.
+2025-06-04 00:14:54 [reactor-http-nio-7] DEBUG r.n.r.PooledConnectionProvider - [0118e7f0] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 00:14:55 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConfig - [0118e7f0] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 00:14:55 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConnector - [0118e7f0] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 00:14:55 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConnector - [0118e7f0] Connect attempt to [localhost/127.0.0.1:8085] failed.
 io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
 Caused by: java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -17,10 +17,10 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-22 15:52:29 [reactor-http-nio-1] DEBUG r.n.r.PooledConnectionProvider - [c628f94c] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
-2025-05-22 15:52:29 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConfig - [c628f94c] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
-2025-05-22 15:52:29 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConnector - [c628f94c] Connecting to [localhost/127.0.0.1:8085].
-2025-05-22 15:52:29 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConnector - [c628f94c] Connect attempt to [localhost/127.0.0.1:8085] failed.
+2025-06-04 00:31:19 [reactor-http-nio-8] DEBUG r.n.r.PooledConnectionProvider - [cb10ea6e] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 00:31:19 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConfig - [cb10ea6e] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 00:31:19 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConnector - [cb10ea6e] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 00:31:19 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConnector - [cb10ea6e] Connect attempt to [localhost/127.0.0.1:8085] failed.
 io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
 Caused by: java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -36,10 +36,10 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-22 15:52:39 [reactor-http-nio-2] DEBUG r.n.r.PooledConnectionProvider - [407ce40c] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
-2025-05-22 15:52:39 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConfig - [407ce40c] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
-2025-05-22 15:52:39 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConnector - [407ce40c] Connecting to [localhost/127.0.0.1:8085].
-2025-05-22 15:52:39 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConnector - [407ce40c] Connect attempt to [localhost/127.0.0.1:8085] failed.
+2025-06-04 00:37:31 [reactor-http-nio-1] DEBUG r.n.r.PooledConnectionProvider - [da08b7f4] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 00:37:31 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConfig - [da08b7f4] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 00:37:31 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConnector - [da08b7f4] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 00:37:31 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConnector - [da08b7f4] Connect attempt to [localhost/127.0.0.1:8085] failed.
 io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
 Caused by: java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -55,10 +55,10 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-22 15:52:49 [reactor-http-nio-3] DEBUG r.n.r.PooledConnectionProvider - [054b4d43] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
-2025-05-22 15:52:49 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConfig - [054b4d43] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
-2025-05-22 15:52:49 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConnector - [054b4d43] Connecting to [localhost/127.0.0.1:8085].
-2025-05-22 15:52:49 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConnector - [054b4d43] Connect attempt to [localhost/127.0.0.1:8085] failed.
+2025-06-04 00:37:41 [reactor-http-nio-2] DEBUG r.n.r.PooledConnectionProvider - [2e01ebf9] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 00:37:41 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConfig - [2e01ebf9] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 00:37:41 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConnector - [2e01ebf9] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 00:37:41 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConnector - [2e01ebf9] Connect attempt to [localhost/127.0.0.1:8085] failed.
 io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
 Caused by: java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -74,10 +74,10 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-22 15:52:59 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [093403a8] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
-2025-05-22 15:52:59 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConfig - [093403a8] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
-2025-05-22 15:52:59 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConnector - [093403a8] Connecting to [localhost/127.0.0.1:8085].
-2025-05-22 15:52:59 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConnector - [093403a8] Connect attempt to [localhost/127.0.0.1:8085] failed.
+2025-06-04 00:53:14 [reactor-http-nio-3] DEBUG r.n.r.PooledConnectionProvider - [5aa12efb] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 00:53:14 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConfig - [5aa12efb] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 00:53:14 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConnector - [5aa12efb] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 00:53:14 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConnector - [5aa12efb] Connect attempt to [localhost/127.0.0.1:8085] failed.
 io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
 Caused by: java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -93,10 +93,10 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-22 15:53:09 [reactor-http-nio-5] DEBUG r.n.r.PooledConnectionProvider - [5c0cb586] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
-2025-05-22 15:53:09 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConfig - [5c0cb586] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
-2025-05-22 15:53:09 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConnector - [5c0cb586] Connecting to [localhost/127.0.0.1:8085].
-2025-05-22 15:53:09 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConnector - [5c0cb586] Connect attempt to [localhost/127.0.0.1:8085] failed.
+2025-06-04 01:25:47 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [02fffe21] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 01:25:47 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConfig - [02fffe21] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 01:25:47 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConnector - [02fffe21] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 01:25:47 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConnector - [02fffe21] Connect attempt to [localhost/127.0.0.1:8085] failed.
 io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
 Caused by: java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -112,10 +112,10 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-22 15:53:19 [reactor-http-nio-6] DEBUG r.n.r.PooledConnectionProvider - [aebf93c1] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
-2025-05-22 15:53:19 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConfig - [aebf93c1] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
-2025-05-22 15:53:19 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConnector - [aebf93c1] Connecting to [localhost/127.0.0.1:8085].
-2025-05-22 15:53:19 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConnector - [aebf93c1] Connect attempt to [localhost/127.0.0.1:8085] failed.
+2025-06-04 01:41:28 [reactor-http-nio-5] DEBUG r.n.r.PooledConnectionProvider - [c0d6ed59] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 01:41:28 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConfig - [c0d6ed59] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 01:41:28 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConnector - [c0d6ed59] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 01:41:28 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConnector - [c0d6ed59] Connect attempt to [localhost/127.0.0.1:8085] failed.
 io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
 Caused by: java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -131,10 +131,10 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-22 15:53:29 [reactor-http-nio-7] DEBUG r.n.r.PooledConnectionProvider - [b93a1960] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
-2025-05-22 15:53:29 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConfig - [b93a1960] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
-2025-05-22 15:53:29 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConnector - [b93a1960] Connecting to [localhost/127.0.0.1:8085].
-2025-05-22 15:53:29 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConnector - [b93a1960] Connect attempt to [localhost/127.0.0.1:8085] failed.
+2025-06-04 01:41:36 [reactor-http-nio-6] DEBUG r.n.r.PooledConnectionProvider - [91a7c428] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 01:41:36 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConfig - [91a7c428] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 01:41:36 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConnector - [91a7c428] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 01:41:36 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConnector - [91a7c428] Connect attempt to [localhost/127.0.0.1:8085] failed.
 io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
 Caused by: java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -150,10 +150,10 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-22 15:53:39 [reactor-http-nio-8] DEBUG r.n.r.PooledConnectionProvider - [62df08e1] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
-2025-05-22 15:53:39 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConfig - [62df08e1] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
-2025-05-22 15:53:39 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConnector - [62df08e1] Connecting to [localhost/127.0.0.1:8085].
-2025-05-22 15:53:39 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConnector - [62df08e1] Connect attempt to [localhost/127.0.0.1:8085] failed.
+2025-06-04 01:43:01 [reactor-http-nio-7] DEBUG r.n.r.PooledConnectionProvider - [10f09b91] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 01:43:01 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConfig - [10f09b91] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 01:43:01 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConnector - [10f09b91] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 01:43:01 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConnector - [10f09b91] Connect attempt to [localhost/127.0.0.1:8085] failed.
 io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
 Caused by: java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -169,10 +169,10 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-22 15:53:49 [reactor-http-nio-1] DEBUG r.n.r.PooledConnectionProvider - [c704dd79] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
-2025-05-22 15:53:49 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConfig - [c704dd79] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
-2025-05-22 15:53:49 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConnector - [c704dd79] Connecting to [localhost/127.0.0.1:8085].
-2025-05-22 15:53:49 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConnector - [c704dd79] Connect attempt to [localhost/127.0.0.1:8085] failed.
+2025-06-04 01:43:11 [reactor-http-nio-8] DEBUG r.n.r.PooledConnectionProvider - [d9c74e73] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 01:43:11 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConfig - [d9c74e73] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 01:43:11 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConnector - [d9c74e73] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 01:43:11 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConnector - [d9c74e73] Connect attempt to [localhost/127.0.0.1:8085] failed.
 io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
 Caused by: java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -188,10 +188,10 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-22 15:53:59 [reactor-http-nio-2] DEBUG r.n.r.PooledConnectionProvider - [6cb506c7] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
-2025-05-22 15:53:59 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConfig - [6cb506c7] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
-2025-05-22 15:53:59 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConnector - [6cb506c7] Connecting to [localhost/127.0.0.1:8085].
-2025-05-22 15:53:59 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConnector - [6cb506c7] Connect attempt to [localhost/127.0.0.1:8085] failed.
+2025-06-04 01:59:44 [reactor-http-nio-1] DEBUG r.n.r.PooledConnectionProvider - [3c2858f0] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 01:59:44 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConfig - [3c2858f0] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 01:59:44 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConnector - [3c2858f0] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 01:59:44 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConnector - [3c2858f0] Connect attempt to [localhost/127.0.0.1:8085] failed.
 io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
 Caused by: java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -207,10 +207,10 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-22 15:54:09 [reactor-http-nio-3] DEBUG r.n.r.PooledConnectionProvider - [2d8a7ff0] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
-2025-05-22 15:54:09 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConfig - [2d8a7ff0] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
-2025-05-22 15:54:09 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConnector - [2d8a7ff0] Connecting to [localhost/127.0.0.1:8085].
-2025-05-22 15:54:09 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConnector - [2d8a7ff0] Connect attempt to [localhost/127.0.0.1:8085] failed.
+2025-06-04 02:15:03 [reactor-http-nio-2] DEBUG r.n.r.PooledConnectionProvider - [752ecb56] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 02:15:03 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConfig - [752ecb56] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 02:15:03 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConnector - [752ecb56] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 02:15:03 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConnector - [752ecb56] Connect attempt to [localhost/127.0.0.1:8085] failed.
 io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
 Caused by: java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -226,10 +226,10 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-22 15:54:19 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [ee212742] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
-2025-05-22 15:54:19 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConfig - [ee212742] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
-2025-05-22 15:54:19 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConnector - [ee212742] Connecting to [localhost/127.0.0.1:8085].
-2025-05-22 15:54:19 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConnector - [ee212742] Connect attempt to [localhost/127.0.0.1:8085] failed.
+2025-06-04 02:47:16 [reactor-http-nio-3] DEBUG r.n.r.PooledConnectionProvider - [32b3fb1d] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 02:47:16 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConfig - [32b3fb1d] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 02:47:16 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConnector - [32b3fb1d] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 02:47:16 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConnector - [32b3fb1d] Connect attempt to [localhost/127.0.0.1:8085] failed.
 io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
 Caused by: java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -245,10 +245,10 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-22 15:54:29 [reactor-http-nio-5] DEBUG r.n.r.PooledConnectionProvider - [06e17d70] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
-2025-05-22 15:54:29 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConfig - [06e17d70] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
-2025-05-22 15:54:29 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConnector - [06e17d70] Connecting to [localhost/127.0.0.1:8085].
-2025-05-22 15:54:29 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConnector - [06e17d70] Connect attempt to [localhost/127.0.0.1:8085] failed.
+2025-06-04 03:02:47 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [bc99c81a] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 03:02:47 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConfig - [bc99c81a] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 03:02:47 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConnector - [bc99c81a] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 03:02:47 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConnector - [bc99c81a] Connect attempt to [localhost/127.0.0.1:8085] failed.
 io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
 Caused by: java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -264,10 +264,10 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-22 15:54:39 [reactor-http-nio-6] DEBUG r.n.r.PooledConnectionProvider - [feb4c8c7] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
-2025-05-22 15:54:39 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConfig - [feb4c8c7] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
-2025-05-22 15:54:39 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConnector - [feb4c8c7] Connecting to [localhost/127.0.0.1:8085].
-2025-05-22 15:54:39 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConnector - [feb4c8c7] Connect attempt to [localhost/127.0.0.1:8085] failed.
+2025-06-04 03:19:20 [reactor-http-nio-5] DEBUG r.n.r.PooledConnectionProvider - [7cf4756c] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 03:19:20 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConfig - [7cf4756c] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 03:19:20 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConnector - [7cf4756c] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 03:19:20 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConnector - [7cf4756c] Connect attempt to [localhost/127.0.0.1:8085] failed.
 io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
 Caused by: java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -283,10 +283,10 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-22 15:54:49 [reactor-http-nio-7] DEBUG r.n.r.PooledConnectionProvider - [763949fc] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
-2025-05-22 15:54:49 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConfig - [763949fc] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
-2025-05-22 15:54:49 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConnector - [763949fc] Connecting to [localhost/127.0.0.1:8085].
-2025-05-22 15:54:49 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConnector - [763949fc] Connect attempt to [localhost/127.0.0.1:8085] failed.
+2025-06-04 03:36:09 [reactor-http-nio-6] DEBUG r.n.r.PooledConnectionProvider - [fe2d77cd] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 03:36:09 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConfig - [fe2d77cd] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 03:36:09 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConnector - [fe2d77cd] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 03:36:09 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConnector - [fe2d77cd] Connect attempt to [localhost/127.0.0.1:8085] failed.
 io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
 Caused by: java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -302,10 +302,10 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-22 15:54:59 [reactor-http-nio-8] DEBUG r.n.r.PooledConnectionProvider - [ce4cfe5e] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
-2025-05-22 15:54:59 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConfig - [ce4cfe5e] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
-2025-05-22 15:54:59 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConnector - [ce4cfe5e] Connecting to [localhost/127.0.0.1:8085].
-2025-05-22 15:54:59 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConnector - [ce4cfe5e] Connect attempt to [localhost/127.0.0.1:8085] failed.
+2025-06-04 03:46:35 [reactor-http-nio-7] DEBUG r.n.r.PooledConnectionProvider - [1dad7cf1] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 03:46:35 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConfig - [1dad7cf1] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 03:46:35 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConnector - [1dad7cf1] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 03:46:35 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConnector - [1dad7cf1] Connect attempt to [localhost/127.0.0.1:8085] failed.
 io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
 Caused by: java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -321,10 +321,10 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-22 15:55:09 [reactor-http-nio-1] DEBUG r.n.r.PooledConnectionProvider - [830dd167] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
-2025-05-22 15:55:09 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConfig - [830dd167] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
-2025-05-22 15:55:09 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConnector - [830dd167] Connecting to [localhost/127.0.0.1:8085].
-2025-05-22 15:55:09 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConnector - [830dd167] Connect attempt to [localhost/127.0.0.1:8085] failed.
+2025-06-04 04:02:38 [reactor-http-nio-8] DEBUG r.n.r.PooledConnectionProvider - [a3b95736] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 04:02:38 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConfig - [a3b95736] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 04:02:38 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConnector - [a3b95736] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 04:02:38 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConnector - [a3b95736] Connect attempt to [localhost/127.0.0.1:8085] failed.
 io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
 Caused by: java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -340,10 +340,10 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-22 15:55:19 [reactor-http-nio-2] DEBUG r.n.r.PooledConnectionProvider - [6f476ffd] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
-2025-05-22 15:55:19 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConfig - [6f476ffd] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
-2025-05-22 15:55:19 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConnector - [6f476ffd] Connecting to [localhost/127.0.0.1:8085].
-2025-05-22 15:55:19 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConnector - [6f476ffd] Connect attempt to [localhost/127.0.0.1:8085] failed.
+2025-06-04 04:19:52 [reactor-http-nio-1] DEBUG r.n.r.PooledConnectionProvider - [2d8e48b0] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 04:19:52 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConfig - [2d8e48b0] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 04:19:52 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConnector - [2d8e48b0] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 04:19:52 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConnector - [2d8e48b0] Connect attempt to [localhost/127.0.0.1:8085] failed.
 io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
 Caused by: java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -359,10 +359,10 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-22 15:55:29 [reactor-http-nio-3] DEBUG r.n.r.PooledConnectionProvider - [efbac0c5] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
-2025-05-22 15:55:29 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConfig - [efbac0c5] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
-2025-05-22 15:55:29 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConnector - [efbac0c5] Connecting to [localhost/127.0.0.1:8085].
-2025-05-22 15:55:29 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConnector - [efbac0c5] Connect attempt to [localhost/127.0.0.1:8085] failed.
+2025-06-04 04:36:41 [reactor-http-nio-2] DEBUG r.n.r.PooledConnectionProvider - [559d21f4] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 04:36:41 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConfig - [559d21f4] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 04:36:41 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConnector - [559d21f4] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 04:36:41 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConnector - [559d21f4] Connect attempt to [localhost/127.0.0.1:8085] failed.
 io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
 Caused by: java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -378,10 +378,10 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-22 15:55:39 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [71133cfb] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
-2025-05-22 15:55:39 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConfig - [71133cfb] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
-2025-05-22 15:55:39 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConnector - [71133cfb] Connecting to [localhost/127.0.0.1:8085].
-2025-05-22 15:55:39 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConnector - [71133cfb] Connect attempt to [localhost/127.0.0.1:8085] failed.
+2025-06-04 04:54:05 [reactor-http-nio-3] DEBUG r.n.r.PooledConnectionProvider - [5cdca78d] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 04:54:05 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConfig - [5cdca78d] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 04:54:05 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConnector - [5cdca78d] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 04:54:05 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConnector - [5cdca78d] Connect attempt to [localhost/127.0.0.1:8085] failed.
 io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
 Caused by: java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -397,10 +397,10 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-22 15:55:49 [reactor-http-nio-5] DEBUG r.n.r.PooledConnectionProvider - [9c9b004e] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
-2025-05-22 15:55:49 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConfig - [9c9b004e] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
-2025-05-22 15:55:49 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConnector - [9c9b004e] Connecting to [localhost/127.0.0.1:8085].
-2025-05-22 15:55:49 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConnector - [9c9b004e] Connect attempt to [localhost/127.0.0.1:8085] failed.
+2025-06-04 05:10:43 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [6c8b3a98] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 05:10:43 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConfig - [6c8b3a98] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 05:10:43 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConnector - [6c8b3a98] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 05:10:43 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConnector - [6c8b3a98] Connect attempt to [localhost/127.0.0.1:8085] failed.
 io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
 Caused by: java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -416,10 +416,10 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-22 15:55:59 [reactor-http-nio-6] DEBUG r.n.r.PooledConnectionProvider - [8f3f8a49] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
-2025-05-22 15:55:59 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConfig - [8f3f8a49] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
-2025-05-22 15:55:59 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConnector - [8f3f8a49] Connecting to [localhost/127.0.0.1:8085].
-2025-05-22 15:55:59 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConnector - [8f3f8a49] Connect attempt to [localhost/127.0.0.1:8085] failed.
+2025-06-04 05:26:06 [reactor-http-nio-5] DEBUG r.n.r.PooledConnectionProvider - [a97d49de] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 05:26:06 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConfig - [a97d49de] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 05:26:06 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConnector - [a97d49de] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 05:26:06 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConnector - [a97d49de] Connect attempt to [localhost/127.0.0.1:8085] failed.
 io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
 Caused by: java.net.ConnectException: Connection refused
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -435,4 +435,631 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-05-22 15:56:08 [SpringApplicationShutdownHook] DEBUG r.netty.transport.ServerTransport - [93aea438, L:/[0:0:0:0:0:0:0:0]:9000] Server is about to be disposed with timeout: PT3S
+2025-06-04 05:41:16 [reactor-http-nio-6] DEBUG r.n.r.PooledConnectionProvider - [28bcaca4] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 05:41:16 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConfig - [28bcaca4] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 05:41:16 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConnector - [28bcaca4] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 05:41:16 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConnector - [28bcaca4] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 05:57:32 [reactor-http-nio-7] DEBUG r.n.r.PooledConnectionProvider - [129dbee3] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 05:57:32 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConfig - [129dbee3] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 05:57:32 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConnector - [129dbee3] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 05:57:32 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConnector - [129dbee3] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 06:13:23 [reactor-http-nio-8] DEBUG r.n.r.PooledConnectionProvider - [a4e7ae00] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 06:13:23 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConfig - [a4e7ae00] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 06:13:23 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConnector - [a4e7ae00] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 06:13:23 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConnector - [a4e7ae00] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 06:31:22 [reactor-http-nio-1] DEBUG r.n.r.PooledConnectionProvider - [dbb9628b] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 06:31:22 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConfig - [dbb9628b] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 06:31:22 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConnector - [dbb9628b] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 06:31:22 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConnector - [dbb9628b] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 07:04:43 [reactor-http-nio-2] DEBUG r.n.r.PooledConnectionProvider - [fc38ae22] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 07:04:43 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConfig - [fc38ae22] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 07:04:43 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConnector - [fc38ae22] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 07:04:43 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConnector - [fc38ae22] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 07:20:44 [reactor-http-nio-3] DEBUG r.n.r.PooledConnectionProvider - [98c655c2] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 07:20:44 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConfig - [98c655c2] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 07:20:44 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConnector - [98c655c2] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 07:20:44 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConnector - [98c655c2] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 07:27:00 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [552a592d] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 07:27:00 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConfig - [552a592d] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 07:27:00 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConnector - [552a592d] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 07:27:00 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConnector - [552a592d] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 07:42:22 [reactor-http-nio-5] DEBUG r.n.r.PooledConnectionProvider - [18792e0c] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 07:42:22 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConfig - [18792e0c] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 07:42:22 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConnector - [18792e0c] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 07:42:22 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConnector - [18792e0c] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 07:59:18 [reactor-http-nio-6] DEBUG r.n.r.PooledConnectionProvider - [7eb90c4b] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 07:59:18 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConfig - [7eb90c4b] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 07:59:18 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConnector - [7eb90c4b] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 07:59:18 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConnector - [7eb90c4b] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 08:18:33 [reactor-http-nio-7] DEBUG r.n.r.PooledConnectionProvider - [faae07d2] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 08:18:33 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConfig - [faae07d2] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 08:18:33 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConnector - [faae07d2] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 08:18:33 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConnector - [faae07d2] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 08:34:22 [reactor-http-nio-8] DEBUG r.n.r.PooledConnectionProvider - [2e226c11] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 08:34:22 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConfig - [2e226c11] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 08:34:22 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConnector - [2e226c11] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 08:34:22 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConnector - [2e226c11] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 08:43:21 [reactor-http-nio-1] DEBUG r.n.r.PooledConnectionProvider - [187016e0] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 08:43:21 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConfig - [187016e0] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 08:43:21 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConnector - [187016e0] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 08:43:21 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConnector - [187016e0] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 08:54:29 [reactor-http-nio-2] DEBUG r.n.r.PooledConnectionProvider - [6b7ae3e7] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 08:54:29 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConfig - [6b7ae3e7] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 08:54:29 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConnector - [6b7ae3e7] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 08:54:29 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConnector - [6b7ae3e7] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 08:59:43 [reactor-http-nio-3] DEBUG r.n.r.PooledConnectionProvider - [d4cb8f23] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 08:59:43 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConfig - [d4cb8f23] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 08:59:43 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConnector - [d4cb8f23] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 08:59:43 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConnector - [d4cb8f23] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 09:01:17 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [899c969f] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 09:01:17 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConfig - [899c969f] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 09:01:17 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConnector - [899c969f] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 09:01:17 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConnector - [899c969f] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 09:01:49 [reactor-http-nio-5] DEBUG r.n.r.PooledConnectionProvider - [ee008b66] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 09:01:49 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConfig - [ee008b66] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 09:01:49 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConnector - [ee008b66] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 09:01:49 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConnector - [ee008b66] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 09:02:21 [reactor-http-nio-6] DEBUG r.n.r.PooledConnectionProvider - [e49eb621] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 09:02:21 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConfig - [e49eb621] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 09:02:21 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConnector - [e49eb621] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 09:02:21 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConnector - [e49eb621] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 09:02:52 [reactor-http-nio-7] DEBUG r.n.r.PooledConnectionProvider - [53ba097c] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 09:02:52 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConfig - [53ba097c] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 09:02:52 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConnector - [53ba097c] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 09:02:52 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConnector - [53ba097c] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 09:03:02 [reactor-http-nio-8] DEBUG r.n.r.PooledConnectionProvider - [968dacfd] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 09:03:02 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConfig - [968dacfd] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 09:03:02 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConnector - [968dacfd] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 09:03:02 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConnector - [968dacfd] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 09:03:21 [reactor-http-nio-1] DEBUG r.n.r.PooledConnectionProvider - [9ef4abea] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 09:03:21 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConfig - [9ef4abea] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 09:03:21 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConnector - [9ef4abea] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 09:03:21 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConnector - [9ef4abea] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 09:03:58 [reactor-http-nio-2] DEBUG r.n.r.PooledConnectionProvider - [dae3d78a] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 09:03:58 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConfig - [dae3d78a] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 09:03:58 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConnector - [dae3d78a] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 09:03:58 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConnector - [dae3d78a] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 09:04:08 [reactor-http-nio-3] DEBUG r.n.r.PooledConnectionProvider - [21989dcb] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 09:04:08 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConfig - [21989dcb] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 09:04:08 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConnector - [21989dcb] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 09:04:08 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConnector - [21989dcb] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 09:04:18 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [709353e9] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 09:04:18 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConfig - [709353e9] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 09:04:18 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConnector - [709353e9] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 09:04:18 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConnector - [709353e9] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 09:04:28 [reactor-http-nio-5] DEBUG r.n.r.PooledConnectionProvider - [535305ed] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 09:04:28 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConfig - [535305ed] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 09:04:28 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConnector - [535305ed] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 09:04:28 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConnector - [535305ed] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 09:04:57 [reactor-http-nio-6] DEBUG r.n.r.PooledConnectionProvider - [d4a5961f] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 09:04:57 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConfig - [d4a5961f] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 09:04:57 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConnector - [d4a5961f] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 09:04:57 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConnector - [d4a5961f] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 09:05:28 [reactor-http-nio-7] DEBUG r.n.r.PooledConnectionProvider - [2adbbe0c] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 09:05:28 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConfig - [2adbbe0c] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 09:05:28 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConnector - [2adbbe0c] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 09:05:28 [reactor-http-nio-7] DEBUG r.netty.transport.TransportConnector - [2adbbe0c] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 09:06:02 [reactor-http-nio-8] DEBUG r.n.r.PooledConnectionProvider - [9cf82fdc] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 09:06:02 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConfig - [9cf82fdc] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 09:06:02 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConnector - [9cf82fdc] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 09:06:02 [reactor-http-nio-8] DEBUG r.netty.transport.TransportConnector - [9cf82fdc] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 09:08:13 [reactor-http-nio-1] DEBUG r.n.r.PooledConnectionProvider - [bf0d73e4] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 09:08:13 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConfig - [bf0d73e4] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 09:08:13 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConnector - [bf0d73e4] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 09:08:13 [reactor-http-nio-1] DEBUG r.netty.transport.TransportConnector - [bf0d73e4] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 09:09:10 [reactor-http-nio-2] DEBUG r.n.r.PooledConnectionProvider - [744d3bb3] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 09:09:10 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConfig - [744d3bb3] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 09:09:11 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConnector - [744d3bb3] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 09:09:11 [reactor-http-nio-2] DEBUG r.netty.transport.TransportConnector - [744d3bb3] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 09:09:17 [reactor-http-nio-3] DEBUG r.n.r.PooledConnectionProvider - [9e545019] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 09:09:18 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConfig - [9e545019] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 09:09:18 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConnector - [9e545019] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 09:09:18 [reactor-http-nio-3] DEBUG r.netty.transport.TransportConnector - [9e545019] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 09:09:27 [reactor-http-nio-4] DEBUG r.n.r.PooledConnectionProvider - [e2c4dabe] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 09:09:27 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConfig - [e2c4dabe] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 09:09:27 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConnector - [e2c4dabe] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 09:09:27 [reactor-http-nio-4] DEBUG r.netty.transport.TransportConnector - [e2c4dabe] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 09:09:37 [reactor-http-nio-5] DEBUG r.n.r.PooledConnectionProvider - [633521b0] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 09:09:37 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConfig - [633521b0] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 09:09:37 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConnector - [633521b0] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 09:09:37 [reactor-http-nio-5] DEBUG r.netty.transport.TransportConnector - [633521b0] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 09:09:47 [reactor-http-nio-6] DEBUG r.n.r.PooledConnectionProvider - [8517a2b0] Created a new pooled channel, now: 0 active connections, 0 inactive connections and 0 pending acquire requests.
+2025-06-04 09:09:47 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConfig - [8517a2b0] Initialized pipeline DefaultChannelPipeline{(reactor.left.httpCodec = io.netty.handler.codec.http.HttpClientCodec), (reactor.left.httpDecompressor = io.netty.handler.codec.http.HttpContentDecompressor), (reactor.right.reactiveBridge = reactor.netty.channel.ChannelOperationsHandler)}
+2025-06-04 09:09:47 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConnector - [8517a2b0] Connecting to [localhost/127.0.0.1:8085].
+2025-06-04 09:09:47 [reactor-http-nio-6] DEBUG r.netty.transport.TransportConnector - [8517a2b0] Connect attempt to [localhost/127.0.0.1:8085] failed.
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:8085
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-06-04 09:09:48 [SpringApplicationShutdownHook] DEBUG r.netty.transport.ServerTransport - [cf805623, L:/[0:0:0:0:0:0:0:0]:9000] Server is about to be disposed with timeout: PT3S

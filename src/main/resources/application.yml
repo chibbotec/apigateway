@@ -4,7 +4,8 @@ spring:
   profiles:
     active: dev
     include: secret
-# 로깅 설정 추가
+
+# 로깅 설정 수정 (trace ID 추가)
 logging:
   level:
     com.ll.apigateway: DEBUG
@@ -12,9 +13,10 @@ logging:
     org.springframework.http.server.reactive: DEBUG
     reactor.netty: DEBUG
   file:
-    name: ./logs/apigateway.log  # 로그 파일 위치
+    name: ./logs/apigateway.log
   pattern:
-      file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level [${spring.application.name:},%X{traceId:-},%X{spanId:-}] %logger{36} - %msg%n"
+
 management:
   endpoints:
     web:
@@ -26,12 +28,19 @@ management:
   info:
     env:
       enabled: true
-  # 새로운 Prometheus 설정
+  # Zipkin 추적 설정 추가
+  tracing:
+    sampling:
+      probability: 1.0  # 100% 샘플링 (개발환경용)
+  zipkin:
+    tracing:
+      endpoint: http://zipkin:9411/api/v2/spans
+  # 기존 Prometheus 설정
   prometheus:
     metrics:
       export:
         enabled: true
-  # 새로운 태그 설정
+  # 기존 태그 설정
   observations:
     tags:
       application: ${spring.application.name}
