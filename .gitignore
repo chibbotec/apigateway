@@ -38,3 +38,4 @@ out/
 application-secret.yml
 application-secret.yml.default
 
+logs
