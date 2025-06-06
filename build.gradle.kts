@@ -58,6 +58,10 @@ dependencies {
     implementation("io.micrometer:micrometer-tracing-bridge-otel")
     implementation("io.opentelemetry:opentelemetry-exporter-zipkin")
 
+    //redis
+    implementation("org.springframework.boot:spring-boot-starter-data-redis")
+    implementation("io.lettuce.core:lettuce-core")
+
     // JPA 쿼리 모니터링을 위한 도구들
 //    implementation ("com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.0")
 //    implementation ("com.github.gavlyukovskiy:datasource-proxy-spring-boot-starter:1.9.0")
