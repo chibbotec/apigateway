@@ -32,10 +32,10 @@ management:
   tracing:
     sampling:
       probability: 1.0  # 100% 샘플링 (개발환경용)
-      excluded-paths:
-        - "/actuator/**"
-        - "/health/**"
-        - "/metrics/**"
+    excluded-paths:
+      - "/actuator/**"
+      - "/health/**"
+      - "/metrics/**"
   zipkin:
     tracing:
       endpoint: http://zipkin:9411/api/v2/spans
